@@ -11,7 +11,10 @@
 }
 
 window.addEventListener("DOMContentLoaded", function() {
-  document.getElementById('hostedappinstall').onclick = function() {
+  document.getElementById('hostedapptc1').onclick = function() {
     installHostedApp("http://jds2501.github.com/webapi-permissions-tests/manifest.webapp");
+  };
+  document.getElementById('hostedapptc2').onclick = function() {
+    installHostedApp("http://jds2501.github.com/webapi-permissions-tests/noicon.webapp");
   };
 });
