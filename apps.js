@@ -17,4 +17,7 @@ window.addEventListener("DOMContentLoaded", function() {
   document.getElementById('hostedapptc2').onclick = function() {
     installHostedApp("http://jds2501.github.com/webapi-permissions-tests/noicon.webapp");
   };
+  document.getElementById('hostedapptc3').onclick = function() {
+    installHostedApp("http://jds2501.github.com/webapi-permissions-tests/japanese.webapp");
+  };
 });
