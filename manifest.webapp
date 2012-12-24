@@ -6,28 +6,8 @@
   "icons": {
     "126": "/qalogo.png"
   },
-  "type": "privileged",
+  "type": "web",
   "permissions": {
-    "device-storage:pictures": {
-      "access": "readonly",
-      "description": "Can read your pictures from your device"
-    },
-    "device-storage:music": {
-      "access": "readonly",
-      "description": "Can read what your music from your device"
-    },
-    "device-storage:sdcard": {
-      "access": "readonly",
-      "description": "Can read what your sdcard is from your device"
-    },
-    "device-storage:videos": {
-      "access": "readonly",
-      "description": "Can read what your videos are from your device"
-    },
-    "contacts": {
-      "access": "readwrite",
-      "description": "Come see my contacts"
-    },
     "geolocation": {
       "description": "Come see my geolocation"
     },
