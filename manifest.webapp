@@ -2,9 +2,9 @@
   "version": "1.0",
   "name": "Test WebAPI Permissions",
   "description": "A test app for testing out web api permissions",
-  "launch_path": "/webapi_permissions_test.html",
+  "launch_path": "/webapi-permissions-tests/webapi_permissions_test.html",
   "icons": {
-    "126": "/qalogo.png"
+    "126": "/webapi-permissions-tests/qalogo.png"
   },
   "type": "web",
   "permissions": {
