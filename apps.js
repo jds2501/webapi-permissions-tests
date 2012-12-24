@@ -20,4 +20,16 @@ window.addEventListener("DOMContentLoaded", function() {
   document.getElementById('hostedapptc3').onclick = function() {
     installHostedApp("http://jds2501.github.com/webapi-permissions-tests/japanese.webapp");
   };
+  document.getElementById('hostedapptc4').onclick = function() {
+    installHostedApp("http://jds2501.github.com/webapi-permissions-tests/developernameonly.webapp");
+  };
+  document.getElementById('hostedapptc5').onclick = function() {
+    installHostedApp("http://jds2501.github.com/webapi-permissions-tests/developerurlonly.webapp");
+  };
+  document.getElementById('hostedapptc6').onclick = function() {
+    installHostedApp("http://jds2501.github.com/webapi-permissions-tests/singlelocaleoverride.webapp");
+  };
+  document.getElementById('hostedapptc7').onclick = function() {
+    installHostedApp("http://jds2501.github.com/webapi-permissions-tests/doublelocaleoverride.webapp");
+  };
 });
