@@ -30,11 +30,11 @@
         "url": "Localized developer url for English"
       }
     },
-    "it": {
-      "name": "Localized app name for IT",
+    "pt-BR": {
+      "name": "Localized app name for Brazil pt-BR",
       "developer": {
-        "name": "Localized developer name for IT",
-        "url": "Localized developer url for IT"
+        "name": "Localized developer name for Brazil pt-BR",
+        "url": "Localized developer url for Brazil pt-BR"
       }
     }
   },
