@@ -1,5 +1,5 @@
 ﻿{
-  "version": "1.0",
+  "version": "1.1",
   "name": "Test WebAPI Permissions",
   "description": "A test app for testing out web api permissions",
   "launch_path": "/webapi_permissions_test.html",
