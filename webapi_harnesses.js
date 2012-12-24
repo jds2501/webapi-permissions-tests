@@ -14,7 +14,8 @@
 }
 
 function desktopNotificationTest() {
-  var notification = navigator.mozNotification.createNotification("Hey, check this out!");
+  var notification = navigator.mozNotification.createNotification(
+		"Sample title", "Sample description", "http://jds2501.github.com/webapi-permissions-tests/qalogo.png");
   notification.show();
 }
 
