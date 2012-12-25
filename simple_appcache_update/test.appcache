@@ -2,3 +2,7 @@
 
 CACHE:
 /webapi-permissions-tests/appcache_preload.html
+/webapi-permissions-tests/privilegedappnosigning.zip
+/webapi-permissions-tests/webpackagedappwithperms.zip
+/webapi-permissions-tests/qalogo.png
+/webapi-permissions-tests/index.html
