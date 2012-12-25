@@ -10,6 +10,18 @@
   };
 }
 
+function installPackagedApp(minimanifest) {
+	var request = navigator.mozApps.installPackage(minimanifest);
+
+  request.onsuccess = function() {
+    alert("Success installing app : " + request.result.manifest.name);
+  };
+
+  request.onerror = function() {
+    alert("Error installing app : " + request.error.name);
+  };
+}
+
 window.addEventListener("DOMContentLoaded", function() {
   document.getElementById('hostedapptc1').onclick = function() {
     installHostedApp("http://jds2501.github.com/webapi-permissions-tests/manifest.webapp");
@@ -35,4 +47,7 @@ window.addEventListener("DOMContentLoaded", function() {
   document.getElementById('hostedapptc7').onclick = function() {
     installHostedApp("http://jds2501.github.com/webapi-permissions-tests/doublelocaleoverride.webapp");
   };
+	document.getElementById('packagedapptc1').onclick = function() {
+		installPackagedApp("http://jds2501.github.com/webapi-permissions-tests/privilegedappnosigning.manifest");
+	};
 });

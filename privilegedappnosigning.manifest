@@ -1,0 +1,7 @@
+﻿{
+ "name" : "New Privileged App",
+ "version" : "1.1",
+ "size" : 16000,
+ "release_notes": "First v1.1 release",
+ "package_path": "/webapi-permissions-tests/privilegedappnosigning.zip"
+}
