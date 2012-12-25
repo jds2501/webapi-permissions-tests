@@ -50,4 +50,7 @@ window.addEventListener("DOMContentLoaded", function() {
 	document.getElementById('packagedapptc1').onclick = function() {
 		installPackagedApp("http://jds2501.github.com/webapi-permissions-tests/privilegedappnosigning.manifest");
 	};
+	document.getElementById('packagedapptc2').onclick = function() {
+		installPackagedApp("http://jds2501.github.com/webapi-permissions-tests/webpackagedappwithperms.manifest");
+	};
 });
