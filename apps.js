@@ -62,4 +62,7 @@ window.addEventListener("DOMContentLoaded", function() {
 	document.getElementById('packagedapptc3').onclick = function() {
 		installPackagedApp("http://jds2501.github.com/webapi-permissions-tests/largesizeinminimanifest.manifest");
 	};
+	document.getElementById('hostedappupdatetc1').onclick = function() {
+		installHostedApp("http://jds2501.github.com/webapi-permissions-tests/simple_appcache_update/manifest.webapp");
+	};
 });

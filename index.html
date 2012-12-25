@@ -162,5 +162,24 @@
 				<a href="https://marketplace-dev.allizom.org/app/test-webapi-permissions/">Privileged App on Marketplace Dev</a>
 			</div>
 		</div>
+		<div>
+			<h2>Hosted App Updates - Appcache Preloading</h2>
+			<div>
+				<h3>Simple Appcache Update</h3>
+				<p>
+					Tests a simple update of the appcache from a very small amount of appcache resources
+					to slightly more. Directions for testing this is below.
+				</p>
+				<ol>
+					<li>Install the hosted app with the button below</li>
+					<li>Copy the appcache data from state_medium_appcache.appcache into test.appcache</li>
+					<li>Push the changes to test.appcache to the server</li>
+					<li>When updates fire, confirm and update the app</li>
+					<li>Uninstall the app</li>
+					<li>Copy the appcache data from state_small_appcache.appcache into test.appcache</li>
+					<li>Push the changes to test.appcache to the server</li>
+				</ol>
+				<input value="Install Hosted App" type="submit" id="hostedappupdatetc1">
+			</div>
   </body>
 </html>

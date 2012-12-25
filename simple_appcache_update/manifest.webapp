@@ -1,0 +1,13 @@
+﻿{
+  "name": "Small Appcache Update",
+  "description": "This is an app that will experience simple appcache updates",
+  "launch_path": "/webapi-permissions-tests/appcache_preload.html",
+  "developer": {
+    "name": "Jason Smith",
+    "url": "http://jasondanielsmith.wordpress.com"
+  },
+  "icons": {
+    "120": "/webapi-permissions-tests/qalogo.png"
+  },
+  "appcache_path": "/webapi-permissions-tests/simple_appcache_update/test.appcache"
+}
