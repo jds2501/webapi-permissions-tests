@@ -47,6 +47,9 @@ window.addEventListener("DOMContentLoaded", function() {
   document.getElementById('hostedapptc7').onclick = function() {
     installHostedApp("http://jds2501.github.com/webapi-permissions-tests/doublelocaleoverride.webapp");
   };
+  document.getElementById('appcachepreloadtc1').onclick = function() {
+    installHostedApp("http://jds2501.github.com/webapi-permissions-tests/smallappcachepreload.webapp");
+  };
 	document.getElementById('packagedapptc1').onclick = function() {
 		installPackagedApp("http://jds2501.github.com/webapi-permissions-tests/privilegedappnosigning.manifest");
 	};
