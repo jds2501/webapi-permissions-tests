@@ -1,6 +1,6 @@
 ﻿function alarmTest() {
 	var output = document.getElementById('alarmsoutput');
-	var request = navigator.mozAlarms.add(new Date("May 15, 2012 16:20:00"), "ignoreTimezone", { mydata: "bar" });
+	var request = navigator.mozAlarms.getAll();
 
 	request.onsuccess = function (e) { 
 		output.textContent = "Successful: " + e.target.result;
