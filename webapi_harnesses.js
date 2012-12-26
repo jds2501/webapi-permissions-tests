@@ -79,7 +79,7 @@ function goFullscreen() {
 }
 
 function noPermissionsForCertifiedWebAPIs() {
-	var output = document.getElementById('certifiedwebapi');
+	var output = document.getElementById('certifiedwebapioutput');
 	var cameraAPINull = navigator.mozCameras === null;
 	output.textContent = "mozCameras is null: " + cameraAPINull;
 }
