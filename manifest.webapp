@@ -8,6 +8,9 @@
   },
   "type": "web",
   "permissions": {
+		"alarms": {
+			"description": "Come see my alarm"
+		},
     "geolocation": {
       "description": "Come see my geolocation"
     },

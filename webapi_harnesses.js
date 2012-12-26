@@ -1,4 +1,16 @@
-﻿function contactTest() {
+﻿function alarmTest() {
+	var output = document.getElementById('alarmsoutput');
+	var request = navigator.mozAlarms.add(new Date("May 15, 2012 16:20:00"), "ignoreTimezone", { mydata: "bar" });
+
+	request.onsuccess = function (e) { 
+		output.textContent = "Successful: " + e.target.result;
+	};
+	request.onerror = function (e) {
+		output.textContent = "Error: " + e.target.error.name; 
+	};
+}
+
+function contactTest() {
   var contact = new mozContact();
   contact.init({name: "Tom"});
   var request = navigator.mozContacts.save(contact);
@@ -15,7 +27,7 @@
 
 function desktopNotificationTest() {
   var notification = navigator.mozNotification.createNotification(
-		"Sample title", "Sample description", "http://jds2501.github.com/webapi-permissions-tests/qalogo.png");
+		"Sample title", "Sample description", "qalogo.png");
   notification.show();
 }
 
@@ -62,6 +74,7 @@ function geolocationTest() {
 }
 
 window.addEventListener("DOMContentLoaded", function() {
+	document.getElementById('alarm').onclick = alarmTest;
   document.getElementById('contacts').onclick = contactTest;
   document.getElementById('notification').onclick = desktopNotificationTest;
   document.getElementById('geolocation').onclick = geolocationTest;
