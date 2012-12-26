@@ -78,8 +78,16 @@ function goFullscreen() {
 	webapiBody.mozRequestFullScreen();
 }
 
+function noPermissionsForCertifiedWebAPIs() {
+	var output = document.getElementById('certifiedwebapi');
+	var cameraAPINull = navigator.mozCameras === null;
+	output.textContent = "mozCameras is null: " + cameraAPINull;
+}
+
 window.addEventListener("DOMContentLoaded", function() {
 	document.getElementById('fullscreen').onclick = goFullscreen;
+	document.getElementById('certifiedwebapi').onclick = noPermissionsForCertifiedWebAPIs;
+
 	document.getElementById('alarm').onclick = alarmTest;
   document.getElementById('contacts').onclick = contactTest;
   document.getElementById('notification').onclick = desktopNotificationTest;
