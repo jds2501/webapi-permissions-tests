@@ -73,7 +73,13 @@ function geolocationTest() {
   }, {enableHighAccuracy: false, timeout: 6000});
 }
 
+function goFullscreen() {
+	var webapiBody = document.getElementById('webapibody');
+	webapiBody.mozRequestFullScreen();
+}
+
 window.addEventListener("DOMContentLoaded", function() {
+	document.getElementById('fullscreen').onclick = goFullscreen;
 	document.getElementById('alarm').onclick = alarmTest;
   document.getElementById('contacts').onclick = contactTest;
   document.getElementById('notification').onclick = desktopNotificationTest;
