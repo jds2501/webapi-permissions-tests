@@ -53,6 +53,9 @@ window.addEventListener("DOMContentLoaded", function() {
   document.getElementById('appcachepreloadtc2').onclick = function() {
     installHostedApp("http://jds2501.github.com/webapi-permissions-tests/mediumappcachepreload.webapp");
   };
+  document.getElementById('appcachepreloadtc3').onclick = function() {
+    installHostedApp("http://jds2501.github.com/webapi-permissions-tests/invalidappcachepreload.webapp");
+  };
 	document.getElementById('packagedapptc1').onclick = function() {
 		installPackagedApp("http://jds2501.github.com/webapi-permissions-tests/privilegedappnosigning.manifest");
 	};
