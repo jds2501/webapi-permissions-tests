@@ -42,7 +42,7 @@ function deviceStorageTest(type) {
     if(obj.target.result === null) {
       output.textContent = output.textContent + "|| enumerate for type " + type + " has finished";
     } else {
-      var filename = e.target.result.name;
+      var filename = obj.target.result.name;
       output.textContent = output.textContent + "|| enumerate for type " + type + " found " + filename;
       object.target.continue();
     }
