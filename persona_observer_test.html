@@ -1,0 +1,66 @@
+﻿<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Persona Test</title>
+		<script src="http://notoriousb2g.personatest.org/include.js"></script>
+		<script type="text/javascript">
+		var onloginEvtCounter = 0;
+		var onreadyEvtCounter = 0;
+		var onlogoutEvtCounter = 0;
+		var oncancelWatchEvtCounter = 0;
+		var oncancelRequestEvtCounter = 0;
+		
+		window.addEventListener("DOMContentLoaded", function() {
+			navigator.id.watch({
+				onlogin: function(assertion) {
+					var onlogincontent = document.getElementById('onlogintext');
+					onloginEvtCounter++;
+					onlogincontent.textContent = "onlogin fired " + onloginEvtCounter + " with " + assertion;
+				},
+				onready: function() {
+					var onreadycontent = document.getElementById('onreadytext');
+					onreadyEvtCounter++;
+					onreadycontent.textContent = "onready fired " + onreadyEvtCounter;
+				},
+				onlogout: function() {
+					var onlogoutcontent = document.getElementById('onlogouttext');
+					onlogoutEvtCounter++;
+					onlogoutcontent.textContent = "onlogout fired " + onlogoutEvtCounter;
+				},
+				oncancel: function() {
+					var oncancelwatchcontent = document.getElementById('oncancelwatchtext');
+					oncancelWatchEvtCounter++;
+					oncancelwatchcontent.textContent = "oncancel fired in watch " + oncancelWatchEvtCounter;
+				}
+			});
+		});
+
+		function login() {
+			navigator.id.request({
+				siteName: "My first test site",
+				termsOfService: "/~jds2501/alarmtest.html",
+				privacyPolicy: "/~jds2501/payment_test.html",
+				returnTo: "/~jds2501/useragenttest.html",
+				oncancel: function() {
+					var oncancelrequestcontent = document.getElementById('oncancelrequesttext');
+					oncancelRequestEvtCounter++;
+					oncancelrequestcontent.textContent = "oncancel fired in request " + oncancelRequestEvtCounter;
+				}
+			});
+		}
+
+		function logout() {
+			navigator.id.logout();
+		}
+		</script>
+	</head>
+	<body>
+		<input value="login" type="submit" onclick="login()"></input>
+		<input value="logout" type="submit" onclick="logout()"></input>
+		<p id="onlogintext">onlogin event has not fired</p>
+		<p id="onreadytext">onready event has not fired</p>
+		<p id="onlogouttext">onlogout event has not fired</p>
+		<p id="oncancelwatchtext">oncancel event in watch has not fired</p>
+		<p id="oncancelrequesttext">oncancel event in request has not fired</p>
+	</body>
+</html>
