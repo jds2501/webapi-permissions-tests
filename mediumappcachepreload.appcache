@@ -6,3 +6,11 @@ CACHE:
 /webapi-permissions-tests/webpackagedappwithperms.zip
 /webapi-permissions-tests/qalogo.png
 /webapi-permissions-tests/index.html
+/webapi-permissions-tests/bootstrap/css/bootstrap.css
+/webapi-permissions-tests/bootstrap/css/bootstrap.min.css
+/webapi-permissions-tests/bootstrap/css/bootstrap-responsive.css
+/webapi-permissions-tests/bootstrap/css/bootstrap-responsive.min.css
+/webapi-permissions-tests/bootstrap/img/glyphicons-halflings.png
+/webapi-permissions-tests/bootstrap/img/glyphicons-halflings-white.png
+/webapi-permissions-tests/bootstrap/js/bootstrap.js
+/webapi-permissions-tests/bootstrap/js/bootstrap.min.js
