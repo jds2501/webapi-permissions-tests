@@ -1,0 +1,14 @@
+﻿{
+  "name" : "Test Large Web Packaged App",
+  "version" : "1.5",
+  "size" : 20000467,
+  "release_notes": "First v1.5 release",
+  "icons": {
+    "126": "/webapi-permissions-tests/qalogo.png"
+  },
+  "developer": {
+    "name": "Mozilla QA",
+    "url": "http://quality.mozilla.org"
+  },
+  "package_path": "/webapi-permissions-tests/large_packaged_app.zip"
+}

@@ -79,6 +79,12 @@ window.addEventListener("DOMContentLoaded", function() {
   document.getElementById('packagedapptc4').onclick = function() {
     installPackagedApp(SERVER + "webapi-permissions-tests/certifiedappnosigning.manifest");
   };
+  document.getElementById('packagedapptc5').onclick = function() {
+    installPackagedApp(SERVER + "webapi-permissions-tests/largepackagedappwithsize.manifest");
+  };
+  document.getElementById('packagedapptc6').onclick = function() {
+    installPackagedApp(SERVER + "webapi-permissions-tests/largepackagedappwithoutsize.manifest");
+  };
   document.getElementById('hostedappupdatetc1').onclick = function() {
     installHostedApp(SERVER + "webapi-permissions-tests/simple_appcache_update/manifest.webapp");
   };

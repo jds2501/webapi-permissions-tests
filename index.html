@@ -2,7 +2,7 @@
   <head>
     <title>B2G Apps Tests</title>
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="apps.js"></script>
@@ -11,12 +11,12 @@
     <h1>B2G Apps Tests</h1>
     <div>
       <h2>Hosted App Install - No Appcache Preload</h2>
-			<p>
-				Note: Only one of these hosted apps is allowed to be installed at one
-				time.
-			</p>
+      <p>
+        Note: Only one of these hosted apps is allowed to be installed at one
+        time.
+      </p>
       <div>
-				<h3>Hosted App Test Case 1</h3>
+        <h3>Hosted App Test Case 1</h3>
         <p>
           App has valid launch path, an icon specified, web type, geolocation,
           desktop notification, and fmradio permissions called out, and a
@@ -25,7 +25,7 @@
         <input value="Install Hosted App" type="submit" id="hostedapptc1">
       </div>
       <div>
-				<h3>Hosted App Test Case 2</h3>
+        <h3>Hosted App Test Case 2</h3>
         <p>
           App has valid launch path, no icon specified, web type, geolocation,
           desktop notification, and fmradio permissions called out, and a
@@ -34,18 +34,18 @@
         <input value="Install Hosted App" type="submit" id="hostedapptc2">
       </div>
       <div>
-				<h3>Hosted App Test Case 3</h3>
+        <h3>Hosted App Test Case 3</h3>
         <p>
           App has valid launch path, icon specified, web type, geolocation,
           desktop notification, and fmradio permissions called out, and a
-          developer name and url specified. App name, description, 
-					and developer name all have Japanese characters and English
-					characters in the fields.
+          developer name and url specified. App name, description,
+          and developer name all have Japanese characters and English
+          characters in the fields.
         </p>
         <input value="Install Hosted App" type="submit" id="hostedapptc3">
       </div>
       <div>
-				<h3>Hosted App Test Case 4</h3>
+        <h3>Hosted App Test Case 4</h3>
         <p>
           App has valid launch path, icon specified, web type, geolocation,
           desktop notification, and fmradio permissions called out, and a
@@ -54,7 +54,7 @@
         <input value="Install Hosted App" type="submit" id="hostedapptc4">
       </div>
       <div>
-				<h3>Hosted App Test Case 5</h3>
+        <h3>Hosted App Test Case 5</h3>
         <p>
           App has valid launch path, icon specified, web type, geolocation,
           desktop notification, and fmradio permissions called out, and a
@@ -63,171 +63,195 @@
         <input value="Install Hosted App" type="submit" id="hostedapptc5">
       </div>
       <div>
-				<h3>Hosted App Test Case 6</h3>
+        <h3>Hosted App Test Case 6</h3>
         <p>
           App has valid launch path, icon specified, web type, geolocation,
           desktop notification, and fmradio permissions called out, and a
           developer name and url specified. The app name and developer name and
-					url are overridden to a localized value if the phone's locale is
-					English. Only one locale override is included.
+          url are overridden to a localized value if the phone's locale is
+          English. Only one locale override is included.
         </p>
         <input value="Install Hosted App" type="submit" id="hostedapptc6">
       </div>
       <div>
-				<h3>Hosted App Test Case 7</h3>
+        <h3>Hosted App Test Case 7</h3>
         <p>
           App has valid launch path, icon specified, web type, geolocation,
           desktop notification, and fmradio permissions called out, and a
           developer name and url specified. The app name and developer name and
-					url are overridden to a localized value if the phone's locale is
-					English or Portuguese. Two locale overrides are included.
+          url are overridden to a localized value if the phone's locale is
+          English or Portuguese. Two locale overrides are included.
         </p>
         <input value="Install Hosted App" type="submit" id="hostedapptc7">
       </div>
       <div>
-				<h3>Hosted App Test Case 8</h3>
+        <h3>Hosted App Test Case 8</h3>
         <p>
           App has valid launch path, an icon specified, web type, geolocation,
           desktop notification, and fmradio permissions called out, and a
           developer name and url specified. The type is privileged. This app
-					should not be able to be installed.
+          should not be able to be installed.
         </p>
         <input value="Install Hosted App" type="submit" id="hostedapptc8">
       </div>
       <div>
-				<h3>Hosted App Test Case 9</h3>
+        <h3>Hosted App Test Case 9</h3>
         <p>
           App has valid launch path, an icon specified, web type, geolocation,
           desktop notification, and fmradio permissions called out, and a
           developer name and url specified. The type is certified. This app
-					should not be able to be installed.
+          should not be able to be installed.
         </p>
         <input value="Install Hosted App" type="submit" id="hostedapptc9">
       </div>
     </div>
-		<div>
-			<h2>Hosted App Install - Appcache Preloading</h2>
-			<div>
-				<h3>Hosted App with Appcache Preloading Test Case 1</h3>
-				<p>
-					App is a hosted app that has a valid launch path, developer name
-					and url, an icon, and a valid small appcache preloaded upon
-					installation of the app.
-				</p>
-				<input value="Install Hosted App" type="submit" id="appcachepreloadtc1">
-			</div>
-			<div>
-				<h3>Hosted App with Appcache Preloading Test Case 2</h3>
-				<p>
-					App is a hosted app that has a valid launch path, developer name
-					and url, an icon, and a valid medium appcache preloaded upon
-					installation of the app.
-				</p>
-				<input value="Install Hosted App" type="submit" id="appcachepreloadtc2">
-			</div>
-			<div>
-				<h3>Hosted App with Appcache Preloading Test Case 3</h3>
-				<p>
-					App is a hosted app that has a valid launch path, developer name
-					and url, an icon, and an invalid appcache preloaded upon
-					installation of the app.
-				</p>
-				<input value="Install Hosted App" type="submit" id="appcachepreloadtc3">
-			</div>
-			<div>
-				<h3>Hosted App with Appcache Preloading Test Case 4</h3>
-				<p>
-					App is a hosted app that has a valid launch path, developer name
-					and url, an icon, and a valid large appcache preloaded upon
-					installation of the app.
-				</p>
-				<input value="Install Hosted App" type="submit" id="appcachepreloadtc4">
-			</div>
-		</div>
-		<div>
-			<h2>Packaged App Install</h2>
-			<div>
-				<h3>Packaged App Test Case 1</h3>
-				<p>
-					App is a privileged packaged app that is not signed. Mini-manifest
-					estimates size to be 16 KB. Has a name, valid launch path, icon,
-					device storage pictures permission, contacts permission, and
-					developer name and url.
-				</p>
-				<input value="Install Packaged App" type="submit" id="packagedapptc1">
-			</div>
-			<div>
-				<h3>Packaged App Test Case 2</h3>
-				<p>
-					App is a web packaged app that is not signed. Mini-manifest
-					estimates size to be 10 KB. Has a name, valid launch path, icon,
-					device storage pictures/music/sdcard/videos permissions, 
-					contacts permissions, geolocation permissions, desktop notification
-					permissions, fmradio permissions and a developer name and url.
-				</p>
-				<input value="Install Packaged App" type="submit" id="packagedapptc2">
-			</div>
-			<div>
-				<h3>Packaged App Test Case 3</h3>
-				<p>
-					App is a web packaged app that is not signed. Mini-manifest
-					estimates size to be larger than the space on the phone. Has a name,
-					valid launch path, icon, device storage pictures/music/sdcard/videos
-					permissions, contacts permissions, geolocation permissions, desktop
-					notification permissions, fmradio permissions and a developer name and
-					url.
-				</p>
-				<input value="Install Packaged App" type="submit" id="packagedapptc3">
-			</div>	
-			<div>
-				<h3>Packaged App Test Case 4</h3>
-				<p>
-					App is a certified packaged app that is not signed. Mini-manifest
-					estimates size to be 16 KB. Has a name, valid launch path, icon,
-					device storage pictures permission, contacts permission, and
-					developer name and url.
-				</p>
-				<input value="Install Packaged App" type="submit" id="packagedapptc4">
-			</div>			
-		</div>
-		<div>
-			<h2>Apps Permissions</h2>
-			<div>
-				<h3>Test page for testing webapi permisisons via the browser</h3>
-				<div>
-					<a href="http://jds2501.github.com/webapi-permissions-tests/webapi_permissions_test.html">WebAPI Permissions Tests</a>
-				</div>
-				<div>
-					<a href="http://jds2501.github.com/webapi-permissions-tests/iframe_webapi_permissions.html">IFrame WebAPI Permissions</a>
-				</div>
-			</div>
-			<div>
-				<h3>Test hosted app for testing webapi permissions</h3>
-				<input value="Install Hosted App" type="submit" id="hostedappperms">
-			</div>
-			<div>
-				<h3>Test privileged app for testing webapi permissions</h3>
-				<a href="https://marketplace-dev.allizom.org/app/test-webapi-permissions/">Privileged App on Marketplace Dev</a>
-			</div>
-		</div>
-		<div>
-			<h2>Hosted App Updates - Appcache Preloading</h2>
-			<div>
-				<h3>Simple Appcache Update</h3>
-				<p>
-					Tests a simple update of the appcache from a very small amount of appcache resources
-					to slightly more. Directions for testing this is below.
-				</p>
-				<ol>
-					<li>Install the hosted app with the button below</li>
-					<li>Copy the appcache data from state_medium_appcache.appcache into test.appcache</li>
-					<li>Push the changes to test.appcache to the server</li>
-					<li>When updates fire, confirm and update the app</li>
-					<li>Uninstall the app</li>
-					<li>Copy the appcache data from state_small_appcache.appcache into test.appcache</li>
-					<li>Push the changes to test.appcache to the server</li>
-				</ol>
-				<input value="Install Hosted App" type="submit" id="hostedappupdatetc1">
-			</div>
+    <div>
+      <h2>Hosted App Install - Appcache Preloading</h2>
+      <div>
+        <h3>Hosted App with Appcache Preloading Test Case 1</h3>
+        <p>
+          App is a hosted app that has a valid launch path, developer name
+          and url, an icon, and a valid small appcache preloaded upon
+          installation of the app.
+        </p>
+        <input value="Install Hosted App" type="submit" id="appcachepreloadtc1">
+      </div>
+      <div>
+        <h3>Hosted App with Appcache Preloading Test Case 2</h3>
+        <p>
+          App is a hosted app that has a valid launch path, developer name
+          and url, an icon, and a valid medium appcache preloaded upon
+          installation of the app.
+        </p>
+        <input value="Install Hosted App" type="submit" id="appcachepreloadtc2">
+      </div>
+      <div>
+        <h3>Hosted App with Appcache Preloading Test Case 3</h3>
+        <p>
+          App is a hosted app that has a valid launch path, developer name
+          and url, an icon, and an invalid appcache preloaded upon
+          installation of the app.
+        </p>
+        <input value="Install Hosted App" type="submit" id="appcachepreloadtc3">
+      </div>
+      <div>
+        <h3>Hosted App with Appcache Preloading Test Case 4</h3>
+        <p>
+          App is a hosted app that has a valid launch path, developer name
+          and url, an icon, and a valid large appcache preloaded upon
+          installation of the app.
+        </p>
+        <input value="Install Hosted App" type="submit" id="appcachepreloadtc4">
+      </div>
+    </div>
+    <div>
+      <h2>Packaged App Install</h2>
+      <div>
+        <h3>Packaged App Test Case 1</h3>
+        <p>
+          App is a privileged packaged app that is not signed. Mini-manifest
+          estimates size to be 16 KB. Has a name, valid launch path, icon,
+          device storage pictures permission, contacts permission, and
+          developer name and url.
+        </p>
+        <input value="Install Packaged App" type="submit" id="packagedapptc1">
+      </div>
+      <div>
+        <h3>Packaged App Test Case 2</h3>
+        <p>
+          App is a web packaged app that is not signed. Mini-manifest
+          estimates size to be 10 KB. Has a name, valid launch path, icon,
+          device storage pictures/music/sdcard/videos permissions,
+          contacts permissions, geolocation permissions, desktop notification
+          permissions, fmradio permissions and a developer name and url.
+        </p>
+        <input value="Install Packaged App" type="submit" id="packagedapptc2">
+      </div>
+      <div>
+        <h3>Packaged App Test Case 3</h3>
+        <p>
+          App is a web packaged app that is not signed. Mini-manifest
+          estimates size to be larger than the space on the phone. Has a name,
+          valid launch path, icon, device storage pictures/music/sdcard/videos
+          permissions, contacts permissions, geolocation permissions, desktop
+          notification permissions, fmradio permissions and a developer name and
+          url.
+        </p>
+        <input value="Install Packaged App" type="submit" id="packagedapptc3">
+      </div>
+      <div>
+        <h3>Packaged App Test Case 4</h3>
+        <p>
+          App is a certified packaged app that is not signed. Mini-manifest
+          estimates size to be 16 KB. Has a name, valid launch path, icon,
+          device storage pictures permission, contacts permission, and
+          developer name and url.
+        </p>
+        <input value="Install Packaged App" type="submit" id="packagedapptc4">
+      </div>
+      <div>
+        <h3>Packaged App Test Case 5</h3>
+        <p>
+          App is a web packaged app that is not signed. Mini-manifest
+          estimates size to be 20.467 MB. Has a name,
+          valid launch path, icon, device storage pictures/music/sdcard/videos
+          permissions, contacts permissions, geolocation permissions, desktop
+          notification permissions, fmradio permissions and a developer name and
+          url. Size of actual package is 20.467 MB.
+        </p>
+        <input value="Install Packaged App" type="submit" id="packagedapptc5">
+      </div>
+      <div>
+        <h3>Packaged App Test Case 6</h3>
+        <p>
+          App is a web packaged app that is not signed. Mini-manifest
+          does not specify a size at all. Has a name,
+          valid launch path, icon, device storage pictures/music/sdcard/videos
+          permissions, contacts permissions, geolocation permissions, desktop
+          notification permissions, fmradio permissions and a developer name and
+          url. Size of actual package is 20.467 MB.
+        </p>
+        <input value="Install Packaged App" type="submit" id="packagedapptc6">
+      </div>
+    </div>
+    <div>
+      <h2>Apps Permissions</h2>
+      <div>
+        <h3>Test page for testing webapi permisisons via the browser</h3>
+        <div>
+          <a href="http://jds2501.github.com/webapi-permissions-tests/webapi_permissions_test.html">WebAPI Permissions Tests</a>
+        </div>
+        <div>
+          <a href="http://jds2501.github.com/webapi-permissions-tests/iframe_webapi_permissions.html">IFrame WebAPI Permissions</a>
+        </div>
+      </div>
+      <div>
+        <h3>Test hosted app for testing webapi permissions</h3>
+        <input value="Install Hosted App" type="submit" id="hostedappperms">
+      </div>
+      <div>
+        <h3>Test privileged app for testing webapi permissions</h3>
+        <a href="https://marketplace-dev.allizom.org/app/test-webapi-permissions/">Privileged App on Marketplace Dev</a>
+      </div>
+    </div>
+    <div>
+      <h2>Hosted App Updates - Appcache Preloading</h2>
+      <div>
+        <h3>Simple Appcache Update</h3>
+        <p>
+          Tests a simple update of the appcache from a very small amount of appcache resources
+          to slightly more. Directions for testing this is below.
+        </p>
+        <ol>
+          <li>Install the hosted app with the button below</li>
+          <li>Copy the appcache data from state_medium_appcache.appcache into test.appcache</li>
+          <li>Push the changes to test.appcache to the server</li>
+          <li>When updates fire, confirm and update the app</li>
+          <li>Uninstall the app</li>
+          <li>Copy the appcache data from state_small_appcache.appcache into test.appcache</li>
+          <li>Push the changes to test.appcache to the server</li>
+        </ol>
+        <input value="Install Hosted App" type="submit" id="hostedappupdatetc1">
+      </div>
   </body>
 </html>
