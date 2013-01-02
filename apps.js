@@ -91,6 +91,9 @@ window.addEventListener("DOMContentLoaded", function() {
   document.getElementById('packagedapptc7').onclick = function() {
     installPackagedApp(SERVER + "webapi-permissions-tests/localeoverride.manifest");
   };
+  document.getElementById('packagedapptc8').onclick = function() {
+    installPackagedApp(SERVER + "webapi-permissions-tests/noicon.manifest");
+  };
   document.getElementById('hostedappupdatetc1').onclick = function() {
     installHostedApp(SERVER + "webapi-permissions-tests/simple_appcache_update/manifest.webapp");
   };
