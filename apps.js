@@ -88,6 +88,9 @@ window.addEventListener("DOMContentLoaded", function() {
   document.getElementById('packagedapptc6').onclick = function() {
     installPackagedApp(SERVER + "webapi-permissions-tests/largepackagedappwithoutsize.manifest");
   };
+  document.getElementById('packagedapptc7').onclick = function() {
+    installPackagedApp(SERVER + "webapi-permissions-tests/localeoverride.manifest");
+  };
   document.getElementById('hostedappupdatetc1').onclick = function() {
     installHostedApp(SERVER + "webapi-permissions-tests/simple_appcache_update/manifest.webapp");
   };
