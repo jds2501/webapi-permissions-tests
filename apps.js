@@ -100,6 +100,12 @@ window.addEventListener("DOMContentLoaded", function() {
   document.getElementById('packagedapptc10').onclick = function() {
     installPackagedApp(SERVER + "webapi-permissions-tests/invalidfiletype.manifest");
   };
+  document.getElementById('packagedapptc11').onclick = function() {
+    installPackagedApp(SERVER + "webapi-permissions-tests/invalidmanifest.manifest");
+  };
+  document.getElementById('packagedapptc12').onclick = function() {
+    installPackagedApp(SERVER + "webapi-permissions-tests/invalidminimanifest.manifest");
+  };
   document.getElementById('hostedappupdatetc1').onclick = function() {
     installHostedApp(SERVER + "webapi-permissions-tests/simple_appcache_update/manifest.webapp");
   };
