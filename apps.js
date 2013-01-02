@@ -94,6 +94,12 @@ window.addEventListener("DOMContentLoaded", function() {
   document.getElementById('packagedapptc8').onclick = function() {
     installPackagedApp(SERVER + "webapi-permissions-tests/noicon.manifest");
   };
+  document.getElementById('packagedapptc9').onclick = function() {
+    installPackagedApp(SERVER + "webapi-permissions-tests/doesnotexist.manifest");
+  };
+  document.getElementById('packagedapptc10').onclick = function() {
+    installPackagedApp(SERVER + "webapi-permissions-tests/invalidfiletype.manifest");
+  };
   document.getElementById('hostedappupdatetc1').onclick = function() {
     installHostedApp(SERVER + "webapi-permissions-tests/simple_appcache_update/manifest.webapp");
   };
