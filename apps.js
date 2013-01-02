@@ -76,6 +76,9 @@ window.addEventListener("DOMContentLoaded", function() {
   document.getElementById('packagedapptc3').onclick = function() {
     installPackagedApp(SERVER + "webapi-permissions-tests/largesizeinminimanifest.manifest");
   };
+  document.getElementById('packagedapptc4').onclick = function() {
+    installPackagedApp(SERVER + "webapi-permissions-tests/certifiedappnosigning.manifest");
+  };
   document.getElementById('hostedappupdatetc1').onclick = function() {
     installHostedApp(SERVER + "webapi-permissions-tests/simple_appcache_update/manifest.webapp");
   };
