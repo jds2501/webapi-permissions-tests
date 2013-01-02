@@ -58,6 +58,18 @@ window.addEventListener("DOMContentLoaded", function() {
   document.getElementById('hostedapptc10').onclick = function() {
     installHostedApp(SERVER + "webapi-permissions-tests/multipleicons.webapp");
   };
+  document.getElementById('hostedapptc11').onclick = function() {
+    installHostedApp(SERVER + "webapi-permissions-tests/nopermissions.webapp");
+  };
+  document.getElementById('hostedapptc12').onclick = function() {
+    installHostedApp(SERVER + "webapi-permissions-tests/geolocationonly.webapp");
+  };
+  document.getElementById('hostedapptc13').onclick = function() {
+    installHostedApp(SERVER + "webapi-permissions-tests/nodeveloperinfoandperms.webapp");
+  };
+  document.getElementById('hostedapptc14').onclick = function() {
+    installHostedApp(SERVER + "webapi-permissions-tests/geolocationonlywithnodevinfo.webapp");
+  };
   document.getElementById('appcachepreloadtc1').onclick = function() {
     installHostedApp(SERVER + "webapi-permissions-tests/smallappcachepreload.webapp");
   };

@@ -1,13 +1,9 @@
 ﻿{
   "version": "1.0",
-  "name": "Test WebAPI Permissions",
-  "description": "A test app for testing out web api permissions",
+  "name": "Test No Developer Info and Perms",
+  "description": "A test app with no developer info and permissions specified",
   "launch_path": "/webapi-permissions-tests/webapi_permissions_test.html",
   "icons": {
     "126": "/webapi-permissions-tests/qalogo.png"
-  },
-  "type": "web",
-  "developer": {
-    "name": "Mozilla QA"
   }
 }
