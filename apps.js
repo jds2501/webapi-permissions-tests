@@ -88,6 +88,9 @@ window.addEventListener("DOMContentLoaded", function() {
   document.getElementById('hostedapptc20').onclick = function() {
     installHostedApp(SERVER + "webapi-permissions-tests/landscapeorientationlock.webapp");
   };
+  document.getElementById('hostedapptc21').onclick = function() {
+    installHostedApp(SERVER + "webapi-permissions-tests/fullscreen.webapp");
+  };
   document.getElementById('appcachepreloadtc1').onclick = function() {
     installHostedApp(SERVER + "webapi-permissions-tests/smallappcachepreload.webapp");
   };
