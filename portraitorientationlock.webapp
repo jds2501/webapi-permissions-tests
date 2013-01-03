@@ -1,0 +1,29 @@
+﻿{
+  "version": "1.0",
+  "name": "Test WebAPI Permissions",
+  "description": "A test app for testing out web api permissions",
+  "launch_path": "/webapi-permissions-tests/webapi_permissions_test.html",
+  "icons": {
+    "126": "/webapi-permissions-tests/qalogo.png"
+  },
+  "type": "web",
+	"orientation": "portrait",
+  "permissions": {
+		"alarms": {
+			"description": "Come see my alarm"
+		},
+    "geolocation": {
+      "description": "Come see my geolocation"
+    },
+    "desktop-notification": {
+      "description": "Come see my notifications"
+    },
+    "fmradio": {
+      "description": "Come see my fmradio"
+    }
+  },
+  "developer": {
+    "name": "Mozilla QA",
+    "url": "http://quality.mozilla.org"
+  }
+}

@@ -70,6 +70,24 @@ window.addEventListener("DOMContentLoaded", function() {
   document.getElementById('hostedapptc14').onclick = function() {
     installHostedApp(SERVER + "webapi-permissions-tests/geolocationonlywithnodevinfo.webapp");
   };
+  document.getElementById('hostedapptc15').onclick = function() {
+    installHostedApp(SERVER + "webapi-permissions-tests/portraitprimaryorientationlock.webapp");
+  };
+  document.getElementById('hostedapptc16').onclick = function() {
+    installHostedApp(SERVER + "webapi-permissions-tests/landscapeprimaryorientationlock.webapp");
+  };
+  document.getElementById('hostedapptc17').onclick = function() {
+    installHostedApp(SERVER + "webapi-permissions-tests/portraitsecondaryorientationlock.webapp");
+  };
+  document.getElementById('hostedapptc18').onclick = function() {
+    installHostedApp(SERVER + "webapi-permissions-tests/landscapesecondaryorientationlock.webapp");
+  };
+  document.getElementById('hostedapptc19').onclick = function() {
+    installHostedApp(SERVER + "webapi-permissions-tests/portraitorientationlock.webapp");
+  };
+  document.getElementById('hostedapptc20').onclick = function() {
+    installHostedApp(SERVER + "webapi-permissions-tests/landscapeorientationlock.webapp");
+  };
   document.getElementById('appcachepreloadtc1').onclick = function() {
     installHostedApp(SERVER + "webapi-permissions-tests/smallappcachepreload.webapp");
   };
