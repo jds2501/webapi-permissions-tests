@@ -8,8 +8,8 @@
   },
   "developer": {
     "name": "Mozilla QA",
-    "url": "http://quality.mozilla.org"
-  },
+    "url": "http://jasondanielsmith.wordpress.com/"
+  }
   "locales": {
     "en": {
       "name": "Localized app name for English",

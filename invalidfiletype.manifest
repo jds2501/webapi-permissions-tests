@@ -5,7 +5,7 @@
   "release_notes": "First v1.1 release",
   "developer": {
     "name": "Mozilla QA",
-    "url": "http://quality.mozilla.org"
-  },
+    "url": "http://jasondanielsmith.wordpress.com/"
+  }
   "package_path": "/webapi-permissions-tests/README.md"
 }

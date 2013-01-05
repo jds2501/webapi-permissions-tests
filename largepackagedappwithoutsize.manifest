@@ -7,7 +7,7 @@
   },
   "developer": {
     "name": "Mozilla QA",
-    "url": "http://quality.mozilla.org"
-  },
+    "url": "http://jasondanielsmith.wordpress.com/"
+  }
   "package_path": "/webapi-permissions-tests/large_packaged_app.zip"
 }
