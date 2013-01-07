@@ -1,0 +1,43 @@
+﻿{
+  "version": "1.0",
+  "name": "Test WebAPI Permissions",
+  "description": "A test app for testing out web api permissions",
+  "launch_path": "/webapi-permissions-tests/webapi_permissions_test.html",
+  "icons": {
+    "126": "/webapi-permissions-tests/qalogo.png"
+  },
+  "type": "web",
+  "permissions": {
+    "alarms": {},
+    "browser":{},
+    "power":{},
+    "fmradio":{},
+    "webapps-manage":{},
+    "mobileconnection":{},
+    "bluetooth":{},
+    "telephony":{},
+    "voicemail":{},
+    "device-storage:sdcard":{ "access": "readonly" },
+    "device-storage:pictures":{ "access": "readwrite" },
+    "device-storage:videos":{ "access": "readwrite" },
+    "device-storage:music":{ "access": "readcreate" },
+    "settings":{ "access": "readwrite" },
+    "storage":{},
+    "camera":{},
+    "geolocation":{},
+    "wifi-manage":{},
+    "desktop-notification":{},
+    "idle":{},
+    "network-events":{},
+    "embed-apps":{},
+    "background-sensors":{},
+    "permissions":{},
+    "audio-channel-publicnotification":{},
+    "audio-channel-notification":{},
+    "cellbroadcast":{}
+  },
+  "developer": {
+    "name": "Mozilla QA",
+    "url": "http://quality.mozilla.org"
+  }
+}
