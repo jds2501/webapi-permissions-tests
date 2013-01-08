@@ -25,6 +25,19 @@ function contactTest() {
   };
 }
 
+function readMyContacts() {
+	var request = navigator.mozContacts.find({});
+	var output = document.getElementById('contactsoutput');
+	
+	request.onsuccess = function () {
+		output.textContent = "I found " + request.result.length + " contacts";
+	};
+	
+	request.onerror = function() {
+    output.textContent = "Failed to read contacts";
+	};
+}
+
 function desktopNotificationTest() {
   var notification = navigator.mozNotification.createNotification(
 		"Sample title", "Sample description", "qalogo.png");
@@ -87,7 +100,7 @@ function noPermissionsForCertifiedWebAPIs() {
 window.addEventListener("DOMContentLoaded", function() {
 	document.getElementById('fullscreen').onclick = goFullscreen;
 	document.getElementById('certifiedwebapi').onclick = noPermissionsForCertifiedWebAPIs;
-
+	document.getElementById('readmycontacts').onclick = readMyContacts;
 	document.getElementById('alarm').onclick = alarmTest;
   document.getElementById('contacts').onclick = contactTest;
   document.getElementById('notification').onclick = desktopNotificationTest;
