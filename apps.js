@@ -148,6 +148,9 @@ window.addEventListener("DOMContentLoaded", function() {
   document.getElementById('packagedapptc13').onclick = function() {
     installPackagedApp(SERVER + "webapi-permissions-tests/uitestswebtype.manifest");
   };
+  document.getElementById('packagedapptc14').onclick = function() {
+    installPackagedApp(SERVER + "webapi-permissions-tests/nodeveloper.manifest");
+  };
   document.getElementById('hostedappupdatetc1').onclick = function() {
     installHostedApp(SERVER + "webapi-permissions-tests/simple_appcache_update/manifest.webapp");
   };

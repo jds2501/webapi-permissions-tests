@@ -1,0 +1,10 @@
+﻿{
+  "name" : "Test WebAPI Permissions",
+  "version" : "1.5",
+  "size" : 10000,
+  "release_notes": "First v1.1 release",
+  "icons": {
+    "126": "/webapi-permissions-tests/qalogo.png"
+  },
+  "package_path": "/webapi-permissions-tests/nodeveloper.zip"
+}
