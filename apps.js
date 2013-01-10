@@ -157,4 +157,7 @@ window.addEventListener("DOMContentLoaded", function() {
   document.getElementById('packagedappupdatetc1').onclick = function() {
     installPackagedApp(SERVER + "webapi-permissions-tests/simple_packaged_update/simple_packaged_update.manifest");
   };
+  document.getElementById('packagedappupdatetc2').onclick = function() {
+    installPackagedApp(SERVER + "webapi-permissions-tests/large_packaged_update/large_packaged_update.manifest");
+  };
 });
