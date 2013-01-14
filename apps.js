@@ -26,7 +26,7 @@ function installPackagedApp(minimanifest) {
 
 window.addEventListener("DOMContentLoaded", function() {
   document.getElementById('hostedapptc1').onclick = function() {
-    installHostedApp(SERVER + "webapi-permissions-tests/manifest.webapp");
+    installHostedApp("http://dictionary.reference.com/appmarket/dictionary/dictionary.webapp");
   };
   document.getElementById('hostedappperms').onclick = function() {
     installHostedApp(SERVER + "webapi-permissions-tests/manifest.webapp");
