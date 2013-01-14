@@ -154,6 +154,9 @@ window.addEventListener("DOMContentLoaded", function() {
   document.getElementById('hostedappupdatetc1').onclick = function() {
     installHostedApp(SERVER + "webapi-permissions-tests/simple_appcache_update/manifest.webapp");
   };
+  document.getElementById('hostedappupdatetc2').onclick = function() {
+    installHostedApp(SERVER + "webapi-permissions-tests/large_appcache_update/manifest.webapp");
+  };
   document.getElementById('packagedappupdatetc1').onclick = function() {
     installPackagedApp(SERVER + "webapi-permissions-tests/simple_packaged_update/simple_packaged_update.manifest");
   };

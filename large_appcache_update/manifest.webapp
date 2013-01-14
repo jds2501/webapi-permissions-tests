@@ -1,0 +1,13 @@
+﻿{
+  "name": "Large Appcache Update",
+  "description": "This is an app that will experience large appcache updates",
+  "launch_path": "/webapi-permissions-tests/appcache_preload.html",
+  "developer": {
+    "name": "Jason Smith",
+    "url": "http://jasondanielsmith.wordpress.com"
+  },
+  "icons": {
+    "120": "/webapi-permissions-tests/qalogo.png"
+  },
+  "appcache_path": "/webapi-permissions-tests/large_appcache_update/small.appcache"
+}
