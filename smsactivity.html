@@ -1,0 +1,15 @@
+﻿<script type="application/javascript">
+var a = new MozActivity({
+	name: "new", 
+	data: {
+		type: "websms/sms"
+	}
+});
+a.onsuccess = function() { 
+	var result = a.result;
+	alert("Result: " + result);
+};
+a.onerror = function() { 
+	alert("Failure when trying to pick an image!"); 
+};
+</script>
