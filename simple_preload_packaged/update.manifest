@@ -1,0 +1,9 @@
+﻿{
+  "name": "Test Simple Preload Packaged",
+  "description": "Simple Preload Packaged Test",
+  "package_path": "/webapi-permissions-tests/state1.zip",
+  "developer": {
+    "name": "Jason Smith",
+    "url": "http://jasondanielsmith.wordpress.com/"
+  }
+}

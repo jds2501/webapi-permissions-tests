@@ -1,0 +1,6 @@
+﻿{
+  "origin": "http://mozqa.com",
+  "installOrigin": "http://mozqa.com",
+  "manifestURL": "http://mozqa.com/webapi-permissions-tests/simple_preload_packaged/update.manifest",
+  "type": "web"
+}
