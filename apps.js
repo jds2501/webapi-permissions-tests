@@ -109,6 +109,9 @@ window.addEventListener("DOMContentLoaded", function() {
   document.getElementById('appcachepreloadtc4').onclick = function() {
     installHostedApp(SERVER + "webapi-permissions-tests/largeappcachepreload.webapp");
   };
+  document.getElementById('appcachepreloadtc5').onclick = function() {
+    installHostedApp(SERVER + "webapi-permissions-tests/invalidiconURLwithappcache.webapp");
+  };
   document.getElementById('packagedapptc1').onclick = function() {
     installPackagedApp(SERVER + "webapi-permissions-tests/privilegedappnosigning.manifest");
   };
