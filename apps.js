@@ -97,6 +97,9 @@ window.addEventListener("DOMContentLoaded", function() {
   document.getElementById('hostedapptc23').onclick = function() {
     installHostedApp(SERVER + "webapi-permissions-tests/manyperms.webapp");
   };
+  document.getElementById('hostedapptc24').onclick = function() {
+    installHostedApp(SERVER + "webapi-permissions-tests/badlaunchpath.webapp");
+  };
   document.getElementById('appcachepreloadtc1').onclick = function() {
     installHostedApp(SERVER + "webapi-permissions-tests/smallappcachepreload.webapp");
   };
