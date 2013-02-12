@@ -1,0 +1,9 @@
+{
+	"name": "Image Uploader",
+	"icons": {"128": "/style/icons/share.png"},
+	"version": "1.0",
+	"package_path": "/webapi-permissions-tests/imageuploader.zip",
+	"size": 2106582,
+	"release_notes": null,
+	"developer": {"url": "https://github.com/lissyx/gaia/tree/image-uploader", "name": "lissyx"}
+}
