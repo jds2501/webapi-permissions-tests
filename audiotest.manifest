@@ -1,0 +1,12 @@
+﻿{
+  "name" : "Audio test",
+  "version" : "1.0.0",
+  "size" : 10000,
+  "release_notes": "First v1.1 release",
+  "developer": {
+    "name": "Nokia",
+    "url": "http://www.nokia.com"
+  },
+  "default_locale": "en-US",
+  "package_path": "/webapi-permissions-tests/audiotest.zip"
+}
