@@ -1,0 +1,11 @@
+﻿{
+  "name" : "Poppit!™",
+  "version" : "1.0.1",
+  "size" : 2747166,
+  "release_notes": "First v1.1 release",
+  "developer": {
+    "name": "Electronic Arts",
+    "url": "http://www.ea.com"
+  },
+  "package_path": "/webapi-permissions-tests/poppit.zip"
+}
