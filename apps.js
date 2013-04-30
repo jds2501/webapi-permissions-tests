@@ -100,6 +100,9 @@ window.addEventListener("DOMContentLoaded", function() {
   document.getElementById('hostedapptc24').onclick = function() {
     installHostedApp(SERVER + "webapi-permissions-tests/badlaunchpath.webapp");
   };
+  document.getElementById('hostedapptc25').onclick = function() {
+    installHostedApp("https://m.tuenti.com/manifest.webapp");
+  };
   document.getElementById('appcachepreloadtc1').onclick = function() {
     installHostedApp(SERVER + "webapi-permissions-tests/smallappcachepreload.webapp");
   };

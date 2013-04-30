@@ -1,0 +1,45 @@
+﻿{
+  "version": "1.1",
+  "name": "Test WebAPI Permissions",
+  "description": "A test app for testing out web api permissions",
+  "launch_path": "/webapi_permissions_test.html",
+  "icons": {
+    "128": "/qalogo.png"
+  },
+  "type": "web",
+  "permissions": {
+    "device-storage:pictures": {
+      "access": "readonly",
+      "description": "Can read your pictures from your device"
+    },
+    "device-storage:music": {
+      "access": "readonly",
+      "description": "Can read what your music from your device"
+    },
+    "device-storage:sdcard": {
+      "access": "readonly",
+      "description": "Can read what your sdcard is from your device"
+    },
+    "device-storage:videos": {
+      "access": "readonly",
+      "description": "Can read what your videos are from your device"
+    },
+    "contacts": {
+      "access": "readwrite",
+      "description": "Come see my contacts"
+    },
+    "geolocation": {
+      "description": "Come see my geolocation"
+    },
+    "desktop-notification": {
+      "description": "Come see my notifications"
+    },
+    "fmradio": {
+      "description": "Come see my fmradio"
+    }
+  },
+  "developer": {
+    "name": "Mozilla QA",
+    "url": "http://jasondanielsmith.wordpress.com/"
+  }
+}
