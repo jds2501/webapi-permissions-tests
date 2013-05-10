@@ -103,6 +103,9 @@ window.addEventListener("DOMContentLoaded", function() {
   document.getElementById('hostedapptc25').onclick = function() {
     installHostedApp("https://m.tuenti.com/manifest.webapp");
   };
+  document.getElementById('hostedapptc26').onclick = function() {
+    installHostedApp("http://m.youtube.com/mozilla_youtube_webapp");
+  };
   document.getElementById('appcachepreloadtc1').onclick = function() {
     installHostedApp(SERVER + "webapi-permissions-tests/smallappcachepreload.webapp");
   };
