@@ -1,0 +1,13 @@
+﻿
+<audio id="test"></audio>
+<script type="text/javascript">
+
+navigator.webkitGetUserMedia({audio: true}, function(stream) {
+	var audioTest = document.getElementById('test');
+	audioTest.mozSrcObject = stream;
+	audioTest.play();
+}, function(err) {
+	console.log(err);
+});
+
+</script>
