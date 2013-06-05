@@ -1,20 +1,29 @@
 ﻿<html>
 	<head>
 		<script type="text/javascript">
-		var message = "1234567890";
-		var iterations = 11;
-		for(var i = 0; i < iterations; i++) {
-			message += message.concat(message);
+		function writeToLocalStorage() {
+			var message = "1234567890";
+			var iterations = 11;
+			for(var i = 0; i < iterations; i++) {
+				message += message.concat(message);
+			}
+
+			var storageAreas = 1;
+			for(var i = 0; i < storageAreas; i++) {
+				var storageLocation = "storage" + i;
+				localStorage[storageLocation] = message;
+			}
 		}
 
-		var storageAreas = 1;
-		for(var i = 0; i < storageAreas; i++) {
-			var storageLocation = "storage" + i;
-			localStorage[storageLocation] = message;
-		}
+		window.addEventListener("DOMContentLoaded", function() {
+			var displayLS = document.getElementById('displayLocalStorage');
+			displayLS.textContent = localStorage['storage0'];
+		});
 		</script>
 	</head>
 	<body>
 		<h1>Large local storage consumption</h1>
+		<p id="displayLocalStorage"></p>
+		<input type="submit" value="Write Local Storage" onclick="writeToLocalStorage();">
 	</body>
 </html>
