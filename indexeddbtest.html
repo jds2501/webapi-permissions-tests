@@ -1,0 +1,72 @@
+﻿<html>
+  <head>
+    <script type="text/javascript">
+    var database;
+    var request = window.indexedDB.open("notepad", 1);
+
+    request.onerror = function(event) {
+      console.log(event.target.errorCode);
+    };
+
+    request.onsuccess = function(event) {
+      database=request.result;
+      alert('indexed db open');
+    };
+
+    request.onupgradeneeded = function(event) {
+      var db = event.target.result;
+      var objectStore = db.createObjectStore("notes", { keyPath:  "id", autoIncrement:true});
+      alert('upgrade needed');
+    };
+
+		function writeSmallData() {
+      var note = {title:'Test Note', body:'Hello World!', date:'01/04/2013'};
+			writeIndexedDB(note);
+		}
+
+		function writeLargeData() {
+			var message = "1234567890";
+			var iterations = 14;
+
+			for(var i = 0; i < iterations; i++) {
+				message += message.concat(message);
+			}
+
+      var note = {title:message, body:'Hello World!', date:'01/04/2013'};
+			writeIndexedDB(note);
+		}
+		
+    function writeIndexedDB(note) {
+      var transaction = database.transaction(["notes"], "readwrite");
+      var objectStore = transaction.objectStore("notes");
+      var request=objectStore.put(note);
+
+      request.onsuccess = function(event) {
+        alert("Successful add!");
+      };
+
+      request.onerror = function(event) {
+        alert("Failure to add!");
+      };
+    }
+
+    function getIndexedDB() {
+      var objectStore = database.transaction("notes").objectStore("notes");
+
+      objectStore.openCursor().onsuccess = function(event) {
+        var cursor = event.target.result;
+        if (cursor) {
+          alert("Note id: " + cursor.key + ", Title: " + cursor.value.title);
+          cursor.continue();
+        }
+      };
+    }
+    </script>
+  </head>
+  <body>
+    <h1>Indexed DB Consumption</h1>
+    <input type="submit" value="Write Small Data" onclick="writeSmallData();">
+		<input type="submit" value="Write Large Data" onclick="writeLargeData();">
+    <input type="submit" value="Get DB" onclick="getIndexedDB();">
+  </body>
+</html>
