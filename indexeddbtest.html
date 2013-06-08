@@ -26,7 +26,7 @@
 
 		function writeLargeData() {
 			var message = "1234567890";
-			var iterations = 14;
+			var iterations = document.getElementById("iterationCount").value;
 
 			for(var i = 0; i < iterations; i++) {
 				message += message.concat(message);
@@ -66,6 +66,7 @@
   <body>
     <h1>Indexed DB Consumption</h1>
     <input type="submit" value="Write Small Data" onclick="writeSmallData();">
+		<input type="text" id="iterationCount">
 		<input type="submit" value="Write Large Data" onclick="writeLargeData();">
     <input type="submit" value="Get DB" onclick="getIndexedDB();">
   </body>
