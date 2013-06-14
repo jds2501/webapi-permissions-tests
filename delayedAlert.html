@@ -1,0 +1,25 @@
+﻿<input type="text">
+<input type="submit" value="Delayed Alert" onclick="delayAlert();">
+<input type="submit" value="Delayed Confirm" onclick="delayConfirm();">
+<input type="submit" value="Delayed Prompt" onclick="delayPrompt();">
+<script type="text/javascript">
+
+function delayAlert() {
+	setTimeout(function() {
+		alert("Hello!");
+	}, 5000);
+}
+
+function delayConfirm() {
+	setTimeout(function() {
+		confirm("Hello!");
+	}, 5000);
+}
+
+function delayPrompt() {
+	setTimeout(function() {
+		prompt("Hello!");
+	}, 5000);
+}
+
+</script>
