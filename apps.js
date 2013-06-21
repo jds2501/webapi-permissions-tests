@@ -106,6 +106,9 @@ window.addEventListener("DOMContentLoaded", function() {
   document.getElementById('hostedapptc26').onclick = function() {
     installHostedApp("http://m.youtube.com/mozilla_youtube_webapp");
   };
+  document.getElementById('hostedapptc27').onclick = function() {
+    installHostedApp("http://whereismyfox.com/manifest.webapp");
+  };
   document.getElementById('appcachepreloadtc1').onclick = function() {
     installHostedApp(SERVER + "webapi-permissions-tests/smallappcachepreload.webapp");
   };
