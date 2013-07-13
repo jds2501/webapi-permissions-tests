@@ -6,11 +6,11 @@ function installHostedApp(manifest) {
   request.onsuccess = function(e) {
     var app = e.target.result;
 
-    result.onprogress = function() {
+    app.onprogress = function() {
       console.log('onprogress fired with ' + app.progress);
     };
 
-    alert("Success installing app : " + request.result.manifest.name);
+    alert("Success installing app : " + app.manifest.name);
   };
 
   request.onerror = function(e) {
@@ -24,11 +24,11 @@ function installPackagedApp(minimanifest) {
   request.onsuccess = function(e) {
     var app = e.target.result;
 
-    result.onprogress = function() {
+    app.onprogress = function() {
       console.log('onprogress fired with ' + app.progress);
     };
 
-    alert("Success installing app : " + result.manifest.name);
+    alert("Success installing app : " + app.manifest.name);
   };
 
   request.onerror = function(e) {
