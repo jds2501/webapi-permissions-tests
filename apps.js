@@ -4,6 +4,12 @@ function installHostedApp(manifest) {
   var request = navigator.mozApps.install(manifest);
 
   request.onsuccess = function() {
+		var app = request.result;
+
+		result.onprogress = function() {
+			console.log('onprogress fired with ' + app.progress);
+		};
+
     alert("Success installing app : " + request.result.manifest.name);
   };
 
@@ -16,7 +22,13 @@ function installPackagedApp(minimanifest) {
   var request = navigator.mozApps.installPackage(minimanifest);
 
   request.onsuccess = function() {
-    alert("Success installing app : " + request.result.manifest.name);
+		var app = request.result;
+
+		result.onprogress = function() {
+			console.log('onprogress fired with ' + app.progress);
+		};
+
+    alert("Success installing app : " + result.manifest.name);
   };
 
   request.onerror = function() {
