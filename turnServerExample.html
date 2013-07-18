@@ -12,8 +12,8 @@ if(navigator.userAgent.match("(Chrome)")) {
 	RTCPeerConnection = mozRTCPeerConnection;
 }
 
-var localPC = new RTCPeerConnection();
-var remotePC = new RTCPeerConnection();
+var localPC = new RTCPeerConnection({"iceServers":[{"url":"stun:23.21.150.121"}]});
+var remotePC = new RTCPeerConnection({"iceServers":[{"url":"stun:23.21.150.121"}]});
 var localCallbackStream = null;
 var remoteCallbackStream = null;
 
