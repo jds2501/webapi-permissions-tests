@@ -2,11 +2,11 @@
 <script type="text/javascript">
 
 navigator.webkitGetUserMedia({audio: true, video: true}, function(stream) {
-	var audioTest = document.getElementById('test');
-	audioTest.src = URL.createObjectURL(stream);
-	audioTest.play();
+  var audioTest = document.getElementById('test');
+  audioTest.src = URL.createObjectURL(stream);
+  audioTest.play();
 }, function(err) {
-	console.log(err);
+  console.log(err);
 });
 
 </script>
