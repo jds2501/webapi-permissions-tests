@@ -1,10 +1,9 @@
-﻿
-<audio id="test"></audio>
+﻿<video id="test"></video>
 <script type="text/javascript">
 
-navigator.webkitGetUserMedia({audio: true}, function(stream) {
+navigator.webkitGetUserMedia({audio: true, video: true}, function(stream) {
 	var audioTest = document.getElementById('test');
-	audioTest.mozSrcObject = stream;
+	audioTest.src = URL.createObjectURL(stream);
 	audioTest.play();
 }, function(err) {
 	console.log(err);
