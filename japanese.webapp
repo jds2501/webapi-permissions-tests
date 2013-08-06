@@ -18,6 +18,9 @@
       "description": "Come see my fmradio"
     }
   },
+	"chrome": {
+		"navigation": true
+	},
   "developer": {
     "name": "テスト Mozilla テスト QA テスト",
     "url": "http://quality.mozilla.org"
