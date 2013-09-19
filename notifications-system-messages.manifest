@@ -1,0 +1,14 @@
+﻿{
+  "name" : "Noti Issue",
+  "version" : "0.1",
+  "size" : 10000,
+  "release_notes": "First v1.1 release",
+	"icons": {
+		"128": "/img/launcher.png"
+	},
+	"developer": {
+		"name": "Michael Diener - Software e.K.",
+		"url": "http://www.mdiener.de/index_en.html"
+	},
+  "package_path": "/webapi-permissions-tests/notifications-system-messages.zip"
+}

@@ -199,6 +199,9 @@ window.addEventListener("DOMContentLoaded", function() {
   document.getElementById('packagedapptc20').onclick = function() {
     installPackagedApp(SERVER + "webapi-permissions-tests/poppit.manifest");
   };
+  document.getElementById('packagedapptc21').onclick = function() {
+    installPackagedApp(SERVER + "webapi-permissions-tests/notifications-system-messages.manifest");
+  };
   document.getElementById('hostedappupdatetc1').onclick = function() {
     installHostedApp(SERVER + "webapi-permissions-tests/simple_appcache_update/manifest.webapp");
   };
