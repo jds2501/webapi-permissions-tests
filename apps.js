@@ -1,4 +1,4 @@
-﻿var SERVER = "http://jds2501.github.com/";
+﻿var SERVER = "http://jds2501.github.io/";
 
 function installHostedApp(manifest) {
   var request = navigator.mozApps.install(manifest);
