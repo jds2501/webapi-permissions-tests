@@ -1,0 +1,6 @@
+﻿{
+  "name": "contextmenu test",
+  "size" : 10000,
+  "release_notes": "First v1.0 release",
+  "package_path": "/webapi-permissions-tests/menutest.zip"
+}

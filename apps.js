@@ -205,6 +205,9 @@ window.addEventListener("DOMContentLoaded", function() {
   document.getElementById('packagedapptc22').onclick = function() {
     installPackagedApp(SERVER + "webapi-permissions-tests/cubevid.manifest");
   };
+  document.getElementById('packagedapptc23').onclick = function() {
+    installPackagedApp(SERVER + "webapi-permissions-tests/menutest.manifest");
+  };
   document.getElementById('hostedappupdatetc1').onclick = function() {
     installHostedApp(SERVER + "webapi-permissions-tests/simple_appcache_update/manifest.webapp");
   };
